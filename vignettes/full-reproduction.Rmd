@@ -1,0 +1,15 @@
+---
+title: "Full Reproduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Full Reproduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+`reproduce_all()` exposes the standardized source-to-result route. Provider-controlled raw inputs are supplied separately; absent those inputs the function completes frozen local publication parity and reports that public reacquisition requires provider access.
+
+```{r, eval=FALSE}
+library(SIECCLongWeather)
+reproduce_all()
+```

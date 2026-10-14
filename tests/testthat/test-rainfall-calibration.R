@@ -1,0 +1,1 @@
+test_that("normal calibration application passes", {z<-apply_rainfall_calibration(100); expect_equal(as.numeric(z),128.24239753736433,tolerance=1e-12); expect_equal(attr(z,"siecc_calibration_count"),1L)})

@@ -1,0 +1,16 @@
+---
+title: "Validated Methodology"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Validated Methodology}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The final six-metric workflow uses fixed national supports, IDW p=2, temperature anomalies, rainfall climatology ratios, one study-specific rainfall calibration, and area weighting. HAC is primary; modified MK is the autocorrelation-adjusted non-parametric sensitivity. See `docs/SCIENTIFIC_METHODS_AND_REFERENCES.md`.
+
+```{r}
+library(SIECCLongWeather)
+area_weighted_mean(c(10, 20), c(1, 3))
+assign_djf(as.Date("2000-12-15"))
+```

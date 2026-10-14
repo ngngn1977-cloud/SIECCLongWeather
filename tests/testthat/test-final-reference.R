@@ -1,0 +1,1 @@
+test_that("full frozen reference reproduction passes", {x<-reproduce_statistics(write_outputs=FALSE); expect_identical(x$PUBLICATION_REPRODUCTION,"PASS"); expect_true(all(x$validation$STATUS=="PASS"))})

@@ -1,0 +1,16 @@
+---
+title: "Publication Validation"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Publication Validation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Validation reports reference and reproduced values, absolute/relative difference, tolerance, and status for all required numerical fields.
+
+```{r, eval=FALSE}
+library(SIECCLongWeather)
+verify_publication_inputs()
+validate_against_publication()
+```

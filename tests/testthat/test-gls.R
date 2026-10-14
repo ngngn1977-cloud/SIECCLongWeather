@@ -1,0 +1,1 @@
+test_that("GLS AR1 reproduces sealed slope", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); r<-SIECCLongWeather:::.siecc_gls_fit(a$YEAR,a$COPERNICUS_AIR_TEMP_C); expect_equal(r$slope_decade,0.269178606855795,tolerance=1e-8)})

@@ -1,0 +1,1 @@
+test_that("modified MK is autocorrelation-adjusted sensitivity", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); r<-modified_mk_fit(a$COPERNICUS_AIR_TEMP_C); expect_equal(r$p,0.000663298614564679,tolerance=1e-8); expect_match(r$role,"HAC_REMAINS_PRIMARY")})

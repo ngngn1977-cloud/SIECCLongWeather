@@ -1,0 +1,16 @@
+{
+  "title": "SIECCLongWeather: Reproduce the SIECC Israel Long-Term Weather Analysis",
+  "description": "Reviewer-facing R package for the validated six-metric SIECC Israel long-term weather analysis.",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Gabinet, Nahum M.",
+      "affiliation": "Bar-Ilan University; University of Haifa",
+      "orcid": "0000-0001-5861-1507"
+    }
+  ],
+  "keywords": ["climate", "Israel", "ERA5", "reproducibility"],
+  "access_right": "open"
+}

@@ -1,0 +1,37 @@
+Package: SIECCLongWeather
+Type: Package
+Title: Reproduce the SIECC Israel Long-Term Weather Analysis
+Version: 1.0.0
+Authors@R: person("Nahum M.", "Gabinet", email = "ngabinet@campus.haifa.ac.il",
+           role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-5861-1507"))
+Description: Reviewer-facing R implementation and reproducibility package for
+    the validated six-metric Israel long-term weather analysis covering annual
+    1950--2025 and December--February 1950/51--2024/25. It implements the
+    validated temporal, spatial, statistical, figure, table, traceability, and
+    publication-validation mathematics while preserving the historical
+    R/Python hybrid production lineage.
+License: MIT + file LICENSE
+URL: https://github.com/ngngn1977-cloud/SIECCLongWeather
+BugReports: https://github.com/ngngn1977-cloud/SIECCLongWeather/issues
+Encoding: UTF-8
+LazyData: false
+Depends: R (>= 4.4.0)
+Imports:
+    grDevices,
+    graphics,
+    stats,
+    utils
+Suggests:
+    digest,
+    knitr,
+    lmtest,
+    mgcv,
+    modifiedmk,
+    nlme,
+    png,
+    rmarkdown,
+    sandwich,
+    testthat (>= 3.0.0),
+    trend,
+    zip
+Config/testthat/edition: 3

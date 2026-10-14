@@ -1,0 +1,15 @@
+---
+title: "Figures and Tables"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Figures and Tables}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Each analytical figure is generated with image, DOCX, and CSV companions. Publication figures also supply PDF/SVG and separate panel PNGs. Multipanel DOCX uses one panel image per borderless cell and a separate panel-letter row.
+
+```{r, eval=FALSE}
+library(SIECCLongWeather)
+run_demo()
+```

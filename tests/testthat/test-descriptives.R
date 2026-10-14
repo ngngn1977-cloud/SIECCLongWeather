@@ -1,0 +1,1 @@
+test_that("descriptives reproduce mean", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); z<-SIECCLongWeather:::.siecc_descriptives(a$COPERNICUS_AIR_TEMP_C,as.character(a$YEAR)); expect_equal(z$MEAN,19.7013232794991,tolerance=1e-10)})

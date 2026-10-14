@@ -1,0 +1,1 @@
+test_that("HAC reproduces sealed slope", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); r<-SIECCLongWeather:::.siecc_hac_fit(a$YEAR,a$COPERNICUS_AIR_TEMP_C); expect_equal(r$slope_decade,0.267873026466327,tolerance=1e-10)})

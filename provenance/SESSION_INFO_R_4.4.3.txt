@@ -1,0 +1,10 @@
+R version 4.4.3 (2025-02-28 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+Matrix products: default
+Locale: C; system code page 65001
+Time zone: Asia/Jerusalem; tzcode source: internal
+Attached base packages: stats, graphics, grDevices, utils, datasets, methods, base
+Loaded namespace: compiler_4.4.3
+
+Role: later publication/rendering compatibility lineage; it did not create the original frozen V6 numerical authority.

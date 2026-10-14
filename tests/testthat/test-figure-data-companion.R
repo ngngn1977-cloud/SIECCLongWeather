@@ -1,0 +1,1 @@
+test_that("figure CSV companions contain every plotted observation and trend", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("final_annual_figure_data.csv"),check.names=FALSE); expect_equal(nrow(a),76); expect_true(all(c("YEAR","COPERNICUS_AIR_TEMP_C","IMS_RAINFALL_TREND")%in%names(a)))})

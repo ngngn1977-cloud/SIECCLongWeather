@@ -1,0 +1,15 @@
+---
+title: "Official Data Access"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Official Data Access}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+IMS and Copernicus inputs must be reacquired from official providers. Raw IMS observations are not redistributed; derived national IMS series are shipped with attribution (see DATA_RIGHTS.md). Live products never replace frozen publication inputs.
+
+```{r}
+library(SIECCLongWeather)
+suppressWarnings(download_live_sources(dry_run = TRUE))
+```

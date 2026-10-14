@@ -1,0 +1,1 @@
+test_that("GAM uses fixed validated architecture", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); r<-SIECCLongWeather:::.siecc_gam_fit(a$YEAR,a$COPERNICUS_AIR_TEMP_C); expect_equal(r$edf,3.50968946127595,tolerance=1e-7); expect_true(r$strong)})

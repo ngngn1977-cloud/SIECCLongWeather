@@ -1,0 +1,1 @@
+test_that("all qualified figure panels are traced", {z<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("final_figure_trace.csv")); expect_true(all(z$STATUS=="PASS")); expect_setequal(unique(z$PANEL),LETTERS[1:4]); expect_false(any(grepl("IMS_RH|RAIN_DAYS",z$OBSERVED_CSV_COLUMN)))})

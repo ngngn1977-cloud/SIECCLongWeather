@@ -1,0 +1,16 @@
+---
+title: "Statistical Reproduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Statistical Reproduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The fast reviewer path begins with hash-verified frozen annual/DJF national series.
+
+```{r, eval=FALSE}
+library(SIECCLongWeather)
+x <- reproduce_statistics()
+x$PUBLICATION_REPRODUCTION
+```

@@ -1,0 +1,1 @@
+test_that("cancelled and double calibration defects are permanent failures", {uncalibrated<-rainfall_ratio_interpolate(0,0,100,100,0,0,100,calibrate=FALSE); expect_false(isTRUE(all.equal(unname(uncalibrated),128.24239753736433))); calibrated<-apply_rainfall_calibration(uncalibrated); expect_error(apply_rainfall_calibration(calibrated),"DOUBLE_CALIBRATION_FORBIDDEN")})

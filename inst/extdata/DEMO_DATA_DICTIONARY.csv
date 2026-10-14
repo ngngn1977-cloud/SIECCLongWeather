@@ -1,0 +1,11 @@
+FILE,FIELD,TYPE,UNIT,DESCRIPTION
+demo_station_observations.csv,DATE,date,YYYY-MM-DD,Synthetic daily demonstration date
+demo_station_observations.csv,STATION_ID,text,none,Synthetic station identifier; not an IMS identifier
+demo_station_observations.csv,X/Y,numeric,arbitrary distance units,Synthetic projected coordinates
+demo_station_observations.csv,TX_C/TN_C,numeric,degC,Synthetic daily maximum/minimum temperature
+demo_station_observations.csv,RAIN_MM,numeric,mm,Synthetic daily rainfall
+demo_station_climatology.csv,TEMP_CLIMATOLOGY_C,numeric,degC,Synthetic station climatology
+demo_station_climatology.csv,RAIN_CLIMATOLOGY_MM,numeric,mm,Synthetic station rainfall climatology
+demo_grid.csv,INTERSECTION_AREA,numeric,arbitrary area units,Known polygon-intersection weight
+demo_grid.csv,TEMP_CLIMATOLOGY_C,numeric,degC,Synthetic grid climatology
+demo_grid.csv,RAIN_CLIMATOLOGY_MM,numeric,mm,Synthetic grid rainfall climatology

@@ -1,0 +1,1 @@
+test_that("Theil-Sen reproduces sealed slope", {a<-utils::read.csv(SIECCLongWeather:::.siecc_reference_path("annual_national_six_metric.csv")); r<-SIECCLongWeather:::.siecc_theilsen_fit(a$COPERNICUS_AIR_TEMP_C); expect_equal(r$slope_decade,0.270497492859704,tolerance=1e-8)})
