@@ -3,7 +3,7 @@ root <- if(length(args)) normalizePath(args[1],winslash="/",mustWork=TRUE) else 
 all <- list.files(root,recursive=TRUE,full.names=TRUE,all.files=TRUE,include.dirs=FALSE)
 all <- gsub("\\\\","/",all)
 rel <- substring(all,nchar(root)+2L)
-excluded <- grepl("^(validation|archives|SIECCLongWeather[.]Rcheck|scripts/node_modules|[.]git)(/|$)",rel) | basename(rel)%in%c("SECRET_SCAN_REPORT.csv","PRIVACY_SCAN_REPORT.csv","PATH_PORTABILITY_SCAN_REPORT.csv") | grepl("[.](tar[.]gz|zip|docx|png|pdf|rds)$",rel,ignore.case=TRUE)
+excluded <- grepl("^(validation|archives|SIECCLongWeather[.]Rcheck|[.]git)(/|$)",rel) | basename(rel)%in%c("SECRET_SCAN_REPORT.csv","PRIVACY_SCAN_REPORT.csv","PATH_PORTABILITY_SCAN_REPORT.csv") | grepl("[.](tar[.]gz|zip|docx|png|pdf|rds)$",rel,ignore.case=TRUE)
 files <- all[!excluded]; rel <- rel[!excluded]
 text_ext <- grepl("[.](R|Rmd|md|txt|csv|tsv|yaml|yml|json|cff|mjs|ps1|Rd|example|gitignore|Rbuildignore)$",files,ignore.case=TRUE) | basename(files)%in%c("DESCRIPTION","NAMESPACE","CITATION","LICENSE")
 read_text <- function(f) paste(readLines(f,warn=FALSE,encoding="UTF-8"),collapse="\n")

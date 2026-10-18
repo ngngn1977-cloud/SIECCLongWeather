@@ -71,6 +71,10 @@ validate_against_publication()
 
 Validation reports reference/reproduced values, absolute and relative differences, tolerance, and status for series, statistics, descriptives, and figure data.
 
+Internal validation labels in the reference files (e.g. MISSION3) are historical stage names and are kept for byte-identity with the sealed reference values.
+
+The secret, privacy and path scan reports are not stored in the repository. Regenerate them with `Rscript scripts/run_repository_scans.R`.
+
 ## External benchmark status
 
 Temperature is concordant. RH direction is externally supported but exact national magnitude lacks a definition-matched benchmark. UTCI is concordant with caveat. No matched Israel-specific national MRT trend benchmark was found. Rainfall change/timing is concordant with caveats; absolute DJF depths differ because spatial domains and area weighting are non-equivalent.

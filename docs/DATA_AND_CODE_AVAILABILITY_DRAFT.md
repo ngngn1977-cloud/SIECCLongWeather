@@ -6,4 +6,4 @@ Large frozen climate inputs are not included in the software archive. Copernicus
 
 The credential-free `run_demo()` path is fully self-contained. Exact statistical reproduction uses hash-verified compact frozen national series. Full source-to-result reproduction requires provider access and the frozen source manifest. Live source data may have changed after publication and are not the numerical authority.
 
-Repository: https://github.com/ngngn1977-cloud/SIECCLongWeather. The release tag and Zenodo DOI are to be inserted only after they exist.
+Repository: https://github.com/ngngn1977-cloud/SIECCLongWeather; release tag v1.0.0; DOI inserted after the Zenodo release.
