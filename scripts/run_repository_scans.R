@@ -22,7 +22,7 @@ privacy_hits<-list(); p<-0L
 for(f in tabular){sep<-if(grepl("[.]tsv$",f,ignore.case=TRUE))"\t" else ","; h<-names(tryCatch(utils::read.table(f,sep=sep,header=TRUE,nrows=1,check.names=FALSE,quote='\"',comment.char=""),error=function(e)data.frame())); bad<-h[grepl(privacy_terms,h,ignore.case=TRUE,perl=TRUE)]; if(length(bad)){p<-p+1L;privacy_hits[[p]]<-data.frame(FILE=substring(normalizePath(f,winslash="/"),nchar(root)+2L),FIELD=paste(bad,collapse="|"),STATUS="FAIL",stringsAsFactors=FALSE)}}
 privacy<-if(p)do.call(rbind,privacy_hits)else data.frame(FILE="",FIELD="",STATUS="PASS",stringsAsFactors=FALSE); privacy$PARTICIPANT_DATA_FOUND<-p
 
-path_patterns<-c("username"="ngngn(?!1977-cloud)","drive_path"="C:[\\\\/]","onedrive"="OneDrive","wsl_home"="/home/ngngn","wsl_mount"="/mnt/c/Users/ngngn")
+path_patterns<-c("drive_path"="C:[\\\\/]","user_dir_windows"="[A-Za-z]:[\\\\/]+Users[\\\\/]","user_dir_unix"="(^|[\\s\"'(=])/(Users|home)/[^/\\s\"']+","wsl_mount"="/mnt/[a-z]/Users/","cloud_sync_folder"="O(?:n)eDrive")
 path_hits<-list(); q<-0L
 for(f in names(scan_texts)) for(label in names(path_patterns)) if(grepl(path_patterns[[label]],scan_texts[[f]],ignore.case=TRUE,perl=TRUE)){q<-q+1L;path_hits[[q]]<-data.frame(FILE=f,PATTERN=label,STATUS="FAIL",stringsAsFactors=FALSE)}
 path_report<-if(q)do.call(rbind,path_hits)else data.frame(FILE="",PATTERN="",STATUS="PASS",stringsAsFactors=FALSE); path_report$ABSOLUTE_LOCAL_PATHS_FOUND<-q
