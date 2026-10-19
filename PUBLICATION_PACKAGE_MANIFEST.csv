@@ -1,6 +1,6 @@
 "RELATIVE_PATH","ROLE","SIZE_BYTES","SHA256","PUBLIC_INCLUDED","LICENSE_STATUS","SOURCE_AUTHORITY","NOTES"
 ".env.example","PACKAGE_METADATA","153","3e149e5c6d9b56fae452b95987db1f565f6a47685256a0f8df814ac01abea415","true","MIT_OR_DECLARED_PROJECT_LICENSE","PACKAGE_RELEASE","Package metadata or governance file."
-".github/workflows/R-CMD-check.yaml","CODE_OR_AUTOMATION","694","1db1334acb7e1bce1530a32ca847376983529ce979b277c1707065d6e808bc43","true","MIT_PACKAGE_CODE","PACKAGE_RELEASE","Source, tests, examples, or release automation."
+".github/workflows/R-CMD-check.yaml","CODE_OR_AUTOMATION","1888","c08100993f11feee7041ee933c3b6557d365eea2f4a3c0ce014367a55022f1db","true","MIT_PACKAGE_CODE","PACKAGE_RELEASE","Source, tests, examples, or release automation."
 ".gitignore","PACKAGE_METADATA","360","3eaa37428b0a429bfa88bd9c746bdee15460a8589477cec2e79c8ccb3545080b","true","MIT_OR_DECLARED_PROJECT_LICENSE","PACKAGE_RELEASE","Package metadata or governance file."
 ".Rbuildignore","PACKAGE_METADATA","480","bc24acb27d946e2a61a37a4c55c1d7bdfdb73b8b24eec3551ea36c1b74b83ae2","true","MIT_OR_DECLARED_PROJECT_LICENSE","PACKAGE_RELEASE","Package metadata or governance file."
 ".zenodo.json","PACKAGE_METADATA","678","b58eccf8d840025cf4a244a3eee783480f5f4c26a60b9412731ed66581dc86f3","true","MIT_OR_DECLARED_PROJECT_LICENSE","PACKAGE_RELEASE","Package metadata or governance file."
