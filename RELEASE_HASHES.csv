@@ -1,2 +1,2 @@
 "ARCHIVE","SHA256","SIZE_BYTES","FILE_COUNT","STATUS","NOTES"
-"SIECCLongWeather_1.0.0.tar.gz","2096f74798d7ec704bee0b048eb346c67215b2b071a5be6a4f358b83563405af","57323","57","PASS","R source package built with R CMD build (R 4.4.3). R CMD check --as-cran --no-manual: 0 ERROR, 0 WARNING, 1 NOTE (new submission; repository URL not yet public). PDF manual skipped (no LaTeX on this machine)."
+"SIECCLongWeather_1.0.0.tar.gz","dd28a20ab61d9f2566743e5a5d5aaa81a4fb7ae302def25b1f599bf8e24134cf","57384","57","PASS","R source package built with R CMD build (R 4.4.3). R CMD check --as-cran --no-manual: 0 ERROR, 0 WARNING, 1 NOTE (new submission; repository URL not yet public). PDF manual skipped (no LaTeX on this machine)."
